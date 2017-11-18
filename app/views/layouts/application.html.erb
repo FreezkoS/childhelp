@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChildHelp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <div class = "container">
+      <%= link_to 'Новый ребенок', new_post_path, class: 'btn btn-outline-primary pull-xs-right'  %>
+      <%= link_to 'Все дети', posts_path, class: 'btn btn-outline-primary pull-xs-right' %>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <% flash.each do |name, message| %>
+                      <div class="alert alert-<%= name %>">
+                          <%= message %>
+                      </div>
+                      <% end %>
+                  </div>
+              </div>
+          </div>
+    <%= yield %>
+      </div>
+  </body>
+</html>
