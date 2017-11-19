@@ -10,3 +10,7 @@ border-width: 2px;
 .editor{
 min-height: 300px;
 }
+
+.left{
+    margin-left: 5px;
+}

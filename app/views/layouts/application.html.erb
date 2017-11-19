@@ -36,11 +36,11 @@
                 <div class = "option">
                     <div class="text">Благотворительный фонд <br> &laquo;Поможем вместе&raquo;</div>
                     <ul>
-                        <li><a href = "#">Главная</a></li>
+                        <li><%= link_to 'Главная', root_path %></li>
                         <li><a href = "#">О фонде</a></li>
                         <li><a href = "#">Программы</a></li>
-                        <li><a href = "#">Им нужна помощь</a></li>
-                        <li><a href = "#">Помогли вместе</a></li>
+                        <li><%= link_to 'Им нужна помощь', posts_path %></li>
+                        <li><%= link_to 'Помогли вместе', posths_path %></li>
                         <li><a href = "#">Новости</a></li>
                         <li><a href = "#">Хочу помочь</a></li>
                         <li><a href = "#">Контакты</a></li>
@@ -64,11 +64,11 @@
               <nav>
             <div class="wrapper">
                 <ul>
-                    <li><a href="">Главная</a></li>
+                    <li><%= link_to 'Главная', root_path %></li>
                     <li><a href="">О фонде</a></li>
                     <li><a href="">Программы</a></li>
-                    <li><a href="">Им нужна помощь</a></li>
-                    <li><a href="">Помогли вместе</a></li>
+                    <li><%= link_to 'Им нужна помощь', posts_path %></li>
+                    <li><%= link_to 'Помогли вместе', posths_path %></li>
                     <li><a href="">Новости</a></li>
                     <li><a href="">Хочу помочь</a></li>
                     <li><a href="">Контакты</a></li>

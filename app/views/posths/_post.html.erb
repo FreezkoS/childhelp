@@ -1,5 +1,4 @@
-
-
+<% @posths.each do |post| %>
 <div class="children">
             <div class="wrapper">
                 <div class="container">
@@ -10,9 +9,9 @@
                            <small class="left">
             <time><%= post.created_at.to_date.strftime("%d %B, %Y") %> </time>
             |
-            <%= link_to 'Ред', edit_post_path(post) %>
+            <%= link_to 'Ред', edit_posth_path(post) %>
             |
-             <%= link_to 'Уд', post_path(post), method: :delete, data: { confirm: 'Вы уверены?' } %>
+             <%= link_to 'Уд', posth_path(post), method: :delete, data: { confirm: 'Вы уверены?' } %>
         </small>
                         <div class="gray_block">
                             <div class="name">
@@ -22,8 +21,9 @@
                                     <%= post.summary %>
                             </div>
                         </div>
-                        <%= link_to 'Читать далее', post_path(post), class: 'green_block' %>
+                        <%= link_to 'Читать далее', posth_path(post), class: 'green_block' %>
                     </div>
                 </div>
             </div>
         </div>
+<% end %>
