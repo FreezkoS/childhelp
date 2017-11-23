@@ -716,19 +716,7 @@ footer .wrapper .menu ul li a:hover {
 
 /*# sourceMappingURL=style.css.map */
 
-/*Якорь*/
- {
-padding:5px;
-position:fixed;
-bottom:10px; 
-left:30px;
-/* отступ кнопки от нижнего края страницы*/
-cursor:pointer;
-opacity:0.5;
-display: block;
-width:50px;
-z-index: 2;
-}
+
 
 #toTop {
   background: #f7616b;
