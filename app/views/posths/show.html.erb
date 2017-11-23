@@ -1,17 +1,25 @@
-<article class="post">
-    <section class="post-head">
-        <h1><%= @posth.title %></h1>
-        <small>
+<div class="themHelp">
+        <div class="wrapper">
+                <div class="text"><%= @posth.title %></div>
+        </div>
+</div>
+     
+ <div class="content">
+<div class="wrapper">
+        <div class="foto">
+              <small>
             <time><%= @posth.created_at.to_date.strftime("%d %B, %Y") %> </time>
             |
             <%= link_to 'Ред', edit_posth_path(@posth) %>
             |
              <%= link_to 'Уд', posth_path(@posth), method: :delete, data: { confirm: 'Вы уверены?' } %>
         </small>
-    </section>
-    
-    <section class="post-body">
         <%= image_tag @posth.image2.url(:large), class: 'img-show' if @posth.image? %>
+        </div>
+         <div class="text">
         <%= @posth.body.html_safe %>
-    </section>
-</article>
+        </div>
+        <div class="btn"><a href = "#">Хочу помочь</a></div>
+
+</div>
+</div>

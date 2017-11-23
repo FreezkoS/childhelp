@@ -14,3 +14,14 @@ min-height: 300px;
 .left{
     margin-left: 5px;
 }
+
+
+.form-group{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.form-control{
+display: block;
+padding:0px 10px 15px 0px;
+}

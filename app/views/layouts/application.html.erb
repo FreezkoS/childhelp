@@ -18,7 +18,7 @@
 <%= stylesheet_link_tag    'application', 'https://fonts.googleapis.com/css?family=Pacifico&amp;subset=latin-ext', media: 'all', 'data-turbolinks-track' => true %>
       
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
       <meta name="viewport" content="width=device-width, initial-scale=1" >
       <meta charset="utf-8">
   </head>
@@ -38,7 +38,7 @@
                     <ul>
                         <li><%= link_to 'Главная', root_path %></li>
                         <li><a href = "#">О фонде</a></li>
-                        <li><a href = "#">Программы</a></li>
+                        <li><%= link_to 'Программы', static_programms_path %></li>
                         <li><%= link_to 'Им нужна помощь', posts_path %></li>
                         <li><%= link_to 'Помогли вместе', posths_path %></li>
                         <li><a href = "#">Новости</a></li>
@@ -53,7 +53,7 @@
             <div class="wrapper">
                 <div class="container">
                     <div class="logo">
-                        <%= image_tag('logo.JPG', :alt => "logo", :class => 'img__zamer') %>
+                         <%= link_to image_tag("logo.JPG"), root_path %>
                     </div>
                     <div class="btn">
                         Стать волонтером
@@ -66,7 +66,7 @@
                 <ul>
                     <li><%= link_to 'Главная', root_path %></li>
                     <li><a href="">О фонде</a></li>
-                    <li><a href="">Программы</a></li>
+                    <li><%= link_to 'Программы', static_programms_path %></li>
                     <li><%= link_to 'Им нужна помощь', posts_path %></li>
                     <li><%= link_to 'Помогли вместе', posths_path %></li>
                     <li><a href="">Новости</a></li>
@@ -82,6 +82,8 @@
       <div class = "container">
       <%= link_to 'Новый ребенок', new_post_path, class: 'btn btn-outline-primary pull-xs-right'  %>
       <%= link_to 'Все дети', posts_path, class: 'btn btn-outline-primary pull-xs-right' %>
+      <%= link_to 'Новый ребенок (помогли)', new_posth_path, class: 'btn btn-outline-primary pull-xs-right'  %>
+      <%= link_to 'Все дети (помогли)', posths_path, class: 'btn btn-outline-primary pull-xs-right' %>
           <div class="container">
               <div class="row">
                   <div class="col-md-12">
@@ -128,5 +130,8 @@
                 <div class="copyright">Благотворительный фонд &laquo;Вместе поможем&raquo; 2017</div>
             </div>
         </footer>
+       <div id="toTop">
+           <%= image_tag('yakor.png', :alt => "logo", :class => 'img__w') %>
+      </div>
   </body>
 </html>

@@ -77,6 +77,91 @@
   margin-top: auto;
 }
 
+.content {
+  margin-bottom: 20px;
+}
+
+.content .foto {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.content .text {
+  font: 24px 'open-sans';
+  line-height: 1.7em;
+  color: #404040;
+  margin-bottom: 20px;
+}
+
+.content .btn {
+  background: #f7616b;
+  max-width: 300px;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 auto;
+  transition: background, 0.3s;
+}
+
+.content .btn:hover {
+  background: #98B028;
+}
+
+.content .btn a {
+  font: 26px lora;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.programms {
+  margin-top: 50px;
+}
+
+.programms .wrapper .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.programms .wrapper .container .item {
+  width: 32%;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+.programms .wrapper .container .item .img {
+  text-align: center;
+  display: block;
+}
+
+.programms .wrapper .container .item .img img {
+  transition: opacity, 300ms;
+}
+
+.programms .wrapper .container .item .img img:hover {
+  opacity: 0.7;
+}
+
+.programms .wrapper .container .item .orange_block {
+  width: 95%;
+  text-align: center;
+  background: #f78161;
+  color: #fff;
+  font: 26px lora;
+  padding: 15px 10px;
+  transform: translateY(-32px) skew(-30deg) translateX(-15px);
+}
+
+.programms .wrapper .container .item .orange_block span {
+  display: inline-block;
+  transform: skew(30deg);
+}
+
 body,
 div,
 dl,
@@ -198,6 +283,21 @@ body {
   background: #fff;
 }
 
+.button_up {
+  background: #f7616b;
+  width: 45px;
+  height: 55px;
+  padding: 0 5px;
+  position: fixed;
+  right: 40px;
+  bottom: 3%;
+  border: 1px solid rgba(148, 75, 56, 0.8);
+}
+
+.button_up img {
+  margin-top: 12px;
+}
+
 .menuS {
   display: none;
 }
@@ -217,7 +317,7 @@ body {
 .menuS .menu_btn {
   width: 35px;
   height: 35px;
-  background-image: url("menu_small.png");
+  background-image: url("../img/menu_small.png");
   background-repeat: no-repeat;
   z-index: 8000;
   position: fixed;
@@ -229,7 +329,7 @@ body {
   position: static;
   margin-top: 15px;
   margin-left: 20px;
-  background-image: url("close_menu.png");
+  background-image: url("../img/close_menu.png");
   background-repeat: no-repeat;
 }
 
@@ -332,7 +432,7 @@ nav ul a:hover {
   box-sizing: border-box;
   padding-top: 80px;
   min-height: 600px;
-  background-image: url('mainBig.jpg');
+  background-image: url('../img/mainBig.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -460,6 +560,14 @@ footer .wrapper .menu ul li a:hover {
 }
 
 @media screen and (max-width: 960px) {
+  .programms .wrapper .container .item {
+    width: 42%;
+  }
+
+  .programms .wrapper .container .item .orange_block {
+    font: 26px lora;
+  }
+
   .wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -477,6 +585,14 @@ footer .wrapper .menu ul li a:hover {
 @media screen and (max-width: 870px) {
   .children .wrapper .container .item {
     width: calc(83.33333333333334% - 30px);
+  }
+
+  .programms .wrapper .container .item {
+    width: 50%;
+  }
+
+  .programms .wrapper .container .item .orange_block {
+    font: 18px lora;
   }
 
   .wrapper {
@@ -500,6 +616,11 @@ footer .wrapper .menu ul li a:hover {
 
   .children .wrapper .container .item .gray_block .discription {
     font-size: 18px;
+  }
+
+  .content .text {
+    font: 20px 'open-sans';
+    line-height: 1.5em;
   }
 
   .wrapper {
@@ -566,6 +687,15 @@ footer .wrapper .menu ul li a:hover {
 }
 
 @media screen and (max-width: 560px) {
+  .content .text {
+    font: 18px 'open-sans';
+    line-height: 1.5em;
+  }
+
+  .programms .wrapper .container .item {
+    width: 95%;
+  }
+
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
@@ -583,3 +713,35 @@ footer .wrapper .menu ul li a:hover {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
+
+/*Якорь*/
+ {
+padding:5px;
+position:fixed;
+bottom:10px; 
+left:30px;
+/* отступ кнопки от нижнего края страницы*/
+cursor:pointer;
+opacity:0.5;
+display: block;
+width:50px;
+z-index: 2;
+}
+
+#toTop {
+  background: #f7616b;
+  padding: 0 5px;
+  position: fixed;
+  right: 40px;
+  bottom: 3%;
+  border: 1px solid rgba(148, 75, 56, 0.8);
+          width: 45px;
+  height: 55px;
+}
+
+#toTop img {
+  margin-top: 12px;
+
+}

@@ -1,17 +1,25 @@
-<article class="post">
-    <section class="post-head">
-        <h1><%= @post.title %></h1>
-        <small>
+ <div class="themHelp">
+        <div class="wrapper">
+                <div class="text"><%= @post.title %></div>
+        </div>
+</div>
+     
+ <div class="content">
+<div class="wrapper">
+        <div class="foto">
+               <small>
             <time><%= @post.created_at.to_date.strftime("%d %B, %Y") %> </time>
             |
             <%= link_to 'Ред', edit_post_path(@post) %>
             |
              <%= link_to 'Уд', post_path(@post), method: :delete, data: { confirm: 'Вы уверены?' } %>
-        </small>
-    </section>
-    
-    <section class="post-body">
+                </small>
         <%= image_tag @post.image2.url(:large), class: 'img-show' if @post.image? %>
+        </div>
+         <div class="text">
         <%= @post.body.html_safe %>
-    </section>
-</article>
+        </div>
+        <div class="btn"><a href = "#">Хочу помочь</a></div>
+
+</div>
+</div>
