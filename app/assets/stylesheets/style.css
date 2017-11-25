@@ -317,7 +317,7 @@ body {
 .menuS .menu_btn {
   width: 35px;
   height: 35px;
-  background-image: url("../img/menu_small.png");
+  background-image: url("menu_small.png");
   background-repeat: no-repeat;
   z-index: 8000;
   position: fixed;
@@ -329,7 +329,7 @@ body {
   position: static;
   margin-top: 15px;
   margin-left: 20px;
-  background-image: url("../img/close_menu.png");
+  background-image: url("close_menu.png");
   background-repeat: no-repeat;
 }
 
@@ -432,7 +432,7 @@ nav ul a:hover {
   box-sizing: border-box;
   padding-top: 80px;
   min-height: 600px;
-  background-image: url('../img/mainBig.jpg');
+  background-image: url('mainBig.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
