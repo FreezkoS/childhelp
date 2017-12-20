@@ -2,7 +2,7 @@ class PosthsController < ApplicationController
   before_action :set_post, only: [ :show, :edit, :update, :destroy ]
     
  def index
-      @posths = Posth.all
+      @posths = Posth.all.page params[:page]
  end
     
  def show
