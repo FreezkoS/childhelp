@@ -6,7 +6,6 @@ git_source(:github) do |repo_name|
 end
 gem 'jquery-ui-rails'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
-
 source 'http://rails-assets.org' do
     gem 'rails-assets-tether', '>= 1.1.0'
 end
