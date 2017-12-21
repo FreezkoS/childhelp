@@ -79,7 +79,7 @@
       
             
 <!--       Сообщения об ошибках-->
-      
+      <% if user_signed_in? %>
       <div class = "container">
       <%= link_to 'Новый ребенок', new_post_path, class: 'btn btn-outline-primary pull-xs-right'  %><br>
       <%= link_to 'Все дети', posts_path, class: 'btn btn-outline-primary pull-xs-right' %><br>
@@ -87,13 +87,9 @@
       <%= link_to 'Все дети (помогли)', posths_path, class: 'btn btn-outline-primary pull-xs-right' %><br>
       <%= link_to 'Новая новость', new_posthh_path, class: 'btn btn-outline-primary pull-xs-right'  %><br>
       <%= link_to 'Все новости', posthhs_path, class: 'btn btn-outline-primary pull-xs-right' %>
-          
-          <% if user_signed_in? %>
-          <%= link_to 'Выход', destroy_user_session_path, method: :delete, class: "" %>
-          <% else %>
-          <%= link_to 'Вход', new_user_session_path %>
-          <%= link_to 'Регистрация', new_user_registration_path %>
-          <% end %>
+      <%= link_to 'Выход', destroy_user_session_path, method: :delete, class: "" %>
+    <% end %>
+      
           
           <div class="container">
               <div class="row">

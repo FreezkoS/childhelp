@@ -8,11 +8,13 @@
 <div class="wrapper">
         <div class="foto">
                <small>
-            <time><%= @post.created_at.to_date.strftime("%d %B, %Y") %> </time>
+            <% if user_signed_in? %>
+                   <time><%= @post.created_at.to_date.strftime("%d %B, %Y") %> </time>
             |
             <%= link_to 'Ред', edit_post_path(@post) %>
             |
              <%= link_to 'Уд', post_path(@post), method: :delete, data: { confirm: 'Вы уверены?' } %>
+                   <% end %>
                 </small>
         <%= image_tag @post.image2.url(:large), class: 'img-show' if @post.image? %>
         </div>
