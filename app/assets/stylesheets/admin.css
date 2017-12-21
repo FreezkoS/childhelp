@@ -1,0 +1,40 @@
+.adminBlock a {
+  font: 18px roboto;
+  text-decoration: none;
+  color: #F7616B;
+}
+
+.formAuth h2 {
+  margin-top: 25px;
+  font: 48px lora;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.formAuth h2 form {
+  max-width: 450px;
+}
+
+.formAuth h2 form label {
+  display: block;
+  width: 100%;
+  font: 22px roboto;
+}
+
+.formAuth h2 form input {
+  display: block;
+  height: 30px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #555;
+  text-indent: 15px;
+  font: 14px roboto;
+  color: #555;
+}
+
+@media screen and (max-width: 730px) {
+  .formAuth h2 {
+    font-size: 36px;
+  }
+}
+/*# sourceMappingURL=admin.css.map */
