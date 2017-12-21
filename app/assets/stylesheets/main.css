@@ -29,3 +29,7 @@ padding:0px 10px 15px 0px;
 .dis{
 display: block;
 }
+
+.nolink{
+text-decoration: none;
+}
