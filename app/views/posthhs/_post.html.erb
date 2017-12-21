@@ -1,0 +1,28 @@
+<div class="children">
+            <div class="wrapper">
+                <div class="container news">
+                    <% @posthhs.each do |post| %>
+                    <div class="item">
+                        <div class="foto">
+                             <%= image_tag post.image.url(:thumb), class: 'img-thumbnail thumb' if post.image? %>
+                        </div>
+                           <small class="left">
+            <time><%= post.created_at.to_date.strftime("%d %B, %Y") %> </time>
+            |
+            <%= link_to 'Ред', edit_posthh_path(post) %>
+            |
+             <%= link_to 'Уд', posthh_path(post), method: :delete, data: { confirm: 'Вы уверены?' } %>
+        </small>
+                        <div class="gray_block">
+                            <div class="name">
+                                <%= post.title %>
+                            </div>
+                            <div class="discription">
+                                    <%= post.summary %>
+                            </div>
+                        </div>
+                        <%= link_to 'Читать далее', posthh_path(post), class: 'green_block' %>
+                    </div><% end %>
+                </div>
+            </div>
+        </div>

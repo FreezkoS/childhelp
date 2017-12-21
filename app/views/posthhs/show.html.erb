@@ -1,0 +1,25 @@
+ <div class="themHelp">
+            <div class="wrapper">
+                <div class="text"><%= @posthh.title %></div>
+            </div>
+        </div>
+        <div class="fotoNews">
+            <div class="wrapper">
+                          <small class="dis">
+            <time><%= @posthh.created_at.to_date.strftime("%d %B, %Y") %> </time>
+            |
+            <%= link_to 'Ред', edit_posthh_path(@posthh) %>
+            |
+             <%= link_to 'Уд', posthh_path(@posthh), method: :delete, data: { confirm: 'Вы уверены?' } %>
+            </small>
+                <%= image_tag @posthh.image.url(:large), class: 'img-show' if @posthh.image? %>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <div class="text">
+                 <%= @posthh.body.html_safe %>
+                </div>
+            </div>
+        </div>

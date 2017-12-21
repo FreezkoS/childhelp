@@ -1,7 +1,7 @@
 
 
 $(function () {
-    var button_up = $('#toTop');
+    var button_up = $('.button_up');
 	button_up.on('click', function(){
 		$('html, body').animate({
             scrollTop: 0

@@ -1,0 +1,38 @@
+<% if @posthh.errors.any? %>
+    <div class="alert alert-danger">
+        <h5><%= t('common.errors') %></h5>
+        <ul>
+            <% @posthh.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+            <% end %>
+        </ul>
+    </div>
+<% end %>
+
+<%= form_for @posthh, html: { multipart: true } do |f| %>
+    <div class="form-group">
+        <%= f.label :Название %>
+        <%= f.text_field :title, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+        <%= f.label :'Краткое описание' %>
+        <%= f.text_area :summary, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+        <%= f.label :Информация %>
+        <%= f.trix_editor :body, class: 'editor' %>
+    </div>
+
+    <div class="form-group">
+        <%= f.label 'Лицевое изображение' %>
+        <%= f.file_field :image %>
+    </div>
+
+    <div class="form-group">
+        <%= f.submit 'Сохранить', class: 'btn btn-primary' %>
+        <%= link_to 'Назад', :back, class: 'btn btn-outline-secondary' %>
+    </div>
+<% end %>
+ 
