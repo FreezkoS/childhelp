@@ -1,3 +1,5 @@
+<div class="container">
+    <div class="wrapper">
 <% if @post.errors.any? %>
     <div class="alert alert-danger">
         <h5><%= t('common.errors') %></h5>
@@ -22,7 +24,7 @@
 
     <div class="form-group">
         <%= f.label :Информация %>
-        <%= f.trix_editor :body, class: 'editor' %>
+        <%= f.trix_editor :body %>
     </div>
 
     <div class="form-group">
@@ -39,3 +41,5 @@
         <%= link_to 'Назад', :back, class: 'btn btn-outline-secondary' %>
     </div>
 <% end %>
+    </div>
+</div>

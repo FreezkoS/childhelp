@@ -6,11 +6,13 @@
         <div class="fotoNews">
             <div class="wrapper">
                           <small class="dis">
+                              <% if user_signed_in? %>
             <time><%= @posthh.created_at.to_date.strftime("%d %B, %Y") %> </time>
             |
             <%= link_to 'Ред', edit_posthh_path(@posthh) %>
             |
              <%= link_to 'Уд', posthh_path(@posthh), method: :delete, data: { confirm: 'Вы уверены?' } %>
+                              <% end %>
             </small>
                 <%= image_tag @posthh.image.url(:large), class: 'img-show' if @posthh.image? %>
             </div>

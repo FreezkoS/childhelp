@@ -8,11 +8,13 @@
 <div class="wrapper">
         <div class="foto">
               <small>
+                  <% if user_signed_in? %>
             <time><%= @posth.created_at.to_date.strftime("%d %B, %Y") %> </time>
             |
             <%= link_to 'Ред', edit_posth_path(@posth) %>
             |
              <%= link_to 'Уд', posth_path(@posth), method: :delete, data: { confirm: 'Вы уверены?' } %>
+                  <% end %>
         </small>
         <%= image_tag @posth.image2.url(:large), class: 'img-show' if @posth.image? %>
         </div>
