@@ -4,6 +4,10 @@
   color: #F7616B;
 }
 
+.adminBlock{
+  margin-top: 20px;
+}
+
 .formAuth h2 {
   margin-top: 25px;
   font: 48px lora;
