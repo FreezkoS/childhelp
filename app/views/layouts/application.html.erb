@@ -19,6 +19,7 @@
       
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1" >
       <meta charset="utf-8">
   </head>
@@ -142,7 +143,30 @@
         </footer>
            <%= image_tag('yakor.png', :alt => "logo", :class => 'button_up') %>
       <script type="text/javascript">
-          alert("sdsdsdsd");
+          
+
+$(function () {
+    var button_up = $('.button_up');
+	button_up.on('click', function(){
+		$('html, body').animate({
+            scrollTop: 0
+        }, 700);
+	});
+	var h = 250;
+	var open = false;
+	
+	$(document).on('scroll', function(){
+		var st = $(this).scrollTop();
+		if(!open && st > h) {
+			open = true;
+			button_up.stop(true).fadeIn(350);
+		} else if(open && st <= h){
+			open = false;
+			button_up.stop(true).fadeOut(350);
+		}
+		
+	});
+});
       </script>
   </body>
 </html>
