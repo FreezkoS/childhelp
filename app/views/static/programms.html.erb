@@ -6,26 +6,28 @@
         <div class="programms">
             <div class="wrapper">
                 <div class="container">
+                    
                     <div class="item">
-                        <%= image_tag('icon1.png', :alt => "",  :class => 'img') %>
+                        <%= link_to image_tag("icon1.png"), static_projectMama_path, class: 'img' %>
                         <div class="orange_block">
                             <span>Не оставляй меня мама</span>
                         </div>
                     </div>
+                    
                     <div class="item">
-                       <%= image_tag('icon2.png', :alt => "",  :class => 'img') %>
+                        <%= link_to image_tag("icon2.png"), static_projectZdorovie_path, class: 'img' %>
                           <div class="orange_block">
                             <span>Здоровое детство</span>
                         </div>
                     </div>
                               <div class="item">
-                           <%= image_tag('icon3.png', :alt => "",  :class => 'img') %>
+                        <%= link_to image_tag("icon3.png"), static_projectPervoePridannoe_path, class: 'img' %>
                         <div class="orange_block">
                             <span>Первое приданное</span>
                         </div>
                     </div>
                     <div class="item">
-                        <%= image_tag('icon4.png', :alt => "",  :class => 'img') %>
+                         <%= link_to image_tag("icon4.png"), static_projectCenterForMam_path, class: 'img' %>
                           <div class="orange_block">
                             <span>Кризисные центры</span>
                         </div>
