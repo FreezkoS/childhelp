@@ -4,5 +4,9 @@
             </div>
         </div>
 <%= render @posts %>
-<%= paginate @posts %>
+<div class="container">
+    <div class="wrapper">
+<%= paginate @posts, class: 'paginate' %>
+    </div>
+</div>
 
