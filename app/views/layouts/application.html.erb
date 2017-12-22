@@ -81,7 +81,7 @@
       
             
 <!--       Сообщения об ошибках-->
-      <% if user_signed_in? %>
+      
       <div class = "container">
           <div class="wrapper">
               <div class="adminBlock">
@@ -94,6 +94,7 @@
               </div>
               <%= link_to 'Выход', destroy_user_session_path, method: :delete, class: "" %>
           </div>
+          <% if user_signed_in? %>
     <% end %>
       
           
