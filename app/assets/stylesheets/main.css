@@ -76,6 +76,7 @@ width: 10PX;
 
 nav.pagination {
     display: block !important;
+     font-size: 16px !important;
 }
 
 .button1{
