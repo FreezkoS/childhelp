@@ -67,3 +67,11 @@ width: 10PX;
 nav.pagination {
     display: block !important;
 }
+
+.button1{
+    margin: 10px 0;
+}
+
+.button2{
+    margin-top: 10px;
+}
