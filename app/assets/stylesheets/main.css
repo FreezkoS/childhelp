@@ -23,7 +23,17 @@ min-height: 300px;
 
 .form-control{
 display: block;
+width: 100%;
 padding:0px 10px 15px 0px;
+resize: none;
+}
+
+textarea#post_summary.form-control{
+    min-height: 200px;
+}
+
+.f{
+max-width: 700px;
 }
 
 .dis{
@@ -74,4 +84,9 @@ nav.pagination {
 
 .button2{
     margin-top: 10px;
+}
+
+.h{
+margin-top: 20px;
+font: 600 24px Roboto;
 }

@@ -1,5 +1,6 @@
 <div class="container">
     <div class="wrapper">
+        <div class="f">
 <% if @posthh.errors.any? %>
     <div class="alert alert-danger">
         <h5><%= t('common.errors') %></h5>
@@ -37,5 +38,6 @@
         <%= link_to 'Назад', :back, class: 'btn btn-outline-secondary' %>
     </div>
 <% end %>
+    </div>
     </div>
 </div>
