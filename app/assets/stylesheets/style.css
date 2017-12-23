@@ -1027,4 +1027,308 @@ footer .wrapper .menu ul li a:hover {
     padding-right: 15px;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .programms .wrapper .container .item {
+    width: 42%;
+  }
+
+  .programms .wrapper .container .item .orange_block {
+    font: 26px lora;
+  }
+
+  .contactsCard .wrapper .content {
+    background-position: center;
+  }
+
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .stat .wrapper .container .item {
+    width: calc(50% - 30px);
+  }
+
+  .stat .wrapper .container .item {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .children .wrapper .container .item {
+    width: calc(83.33333333333334% - 30px);
+  }
+
+  .aboutPage .tagline {
+    font-size: 36px;
+  }
+
+  .textAboutPage .wrapper .headline {
+    font-size: 38px;
+  }
+
+  .textAboutPage .wrapper .text {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .aimAbout .wrapper .headline {
+    font-size: 38px;
+  }
+
+  .aimAbout .wrapper .text {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  .tasks .headline {
+    font-size: 38px;
+  }
+
+  .tasks .container {
+    justify-content: center;
+  }
+
+  .tasks .container .item {
+    width: calc(83.33333333333334% - 30px);
+  }
+
+  .tasks .container .item {
+    border-bottom: 5px solid #f7616b;
+    border-right: none;
+  }
+
+  .programms .wrapper .container .item {
+    width: 50%;
+  }
+
+  .programms .wrapper .container .item .orange_block {
+    font: 18px lora;
+  }
+
+  .contactsCard .wrapper .content .name {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .contactsCard .wrapper .content .container {
+    font-size: 18px;
+  }
+
+  .contactsCard .wrapper .content .container {
+    justify-content: center;
+  }
+
+  .contactsCard .wrapper .content .container .bold {
+    font-size: 19px;
+  }
+
+  .contactsCard .wrapper .content .container .left {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .contactsCard .wrapper .content .container .right {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .themHelp .wrapper .text {
+    font-size: 32px;
+  }
+
+  .children .wrapper .container .item {
+    width: calc(100% - 30px);
+  }
+
+  .children .wrapper .container .item .gray_block .name {
+    font-size: 32px;
+  }
+
+  .children .wrapper .container .item .gray_block .discription {
+    font-size: 18px;
+  }
+
+  .ProgrammContent .mainText ul li {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .contactsCard .wrapper .content .name {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  .content .text {
+    font: 20px 'open-sans';
+    line-height: 1.5em;
+  }
+
+  .fotoNews .wrapper img {
+    width: 100%;
+  }
+
+  .content .text {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .menuS {
+    display: block;
+  }
+
+  header {
+    margin-bottom: 00px;
+  }
+
+  header .wrapper .container .logo {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  header .wrapper .container .btn {
+    font: italic 24px lora;
+  }
+
+  header .wrapper .container .btn {
+    margin: 0 auto;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .slogan {
+    margin-bottom: 30px;
+  }
+
+  .slogan {
+    min-height: 400px;
+  }
+
+  .slogan .text {
+    font: 28px 'marck script';
+  }
+
+  .stat {
+    margin-bottom: 40px;
+  }
+
+  .stat .wrapper .container .item {
+    width: calc(66.66666666666667% - 30px);
+  }
+
+  .help .wrapper .text {
+    font: 48px lora;
+  }
+
+  footer {
+    padding: 10px 0;
+  }
+
+  footer .wrapper {
+    min-height: 0;
+  }
+
+  footer .wrapper .copyright {
+    font-size: 16px;
+  }
+
+  footer .wrapper .info {
+    margin-top: 20px;
+  }
+
+  footer .wrapper .info ul {
+    text-align: center;
+  }
+
+  footer .wrapper .info ul li {
+    font-size: 20px;
+  }
+
+  footer .wrapper .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .aboutPage .tagline {
+    font-size: 30px;
+  }
+
+  .textAboutPage .wrapper .headline {
+    font-size: 32px;
+  }
+
+  .textAboutPage .wrapper .text {
+    font-size: 14px;
+  }
+
+  .aimAbout .wrapper .text {
+    font-size: 20px;
+  }
+
+  .tasks .headline {
+    margin-bottom: 30px;
+  }
+
+  .programms .wrapper .container .item {
+    width: 95%;
+  }
+
+  .ProgrammContent p {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+
+  .content .text {
+    font: 18px 'open-sans';
+    line-height: 1.5em;
+  }
+
+  .content .text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .stat .wrapper .container .item {
+    width: calc(100% - 30px);
+  }
+
+  .help .wrapper .text {
+    font: 36px lora;
+  }
+
+  .help .wrapper .btn {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
